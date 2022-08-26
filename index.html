@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <meta name="description" content="Determine if your golf opponent is sandbagging">
+
+        <title>Sandbagger Sleuth</title>
+    </head>
+    <body>
+        <h1>Sandbagger Sleuth</h1>
+        <p>A simple website to determine if an individual is sandbagging</b></p>
+        <p>Fill out the fields below and hit submit to see the odds of an individual shooting a certain score based on their USGA index. </p>
+        <p>Scores whose odds of occuring exceed 258 to 1 are considered by the USGA to be the work of a sandbagger. </p>
+
+    </body>
+
+    <form action=#>
+        <label for="score">Score:</label><br>
+        <input type="text" id="score" name="score" placeholder="87"><br>
+        <label for="uindex">USGA Index:</label><br>
+        <input type="text" id="uindex" name="uindex" placeholder="12.7"><br><br>
+        <label for="crate">Course Rating:</label><br>
+        <input type="text" id="crate" name="crate" placeholder="72.5"><br>
+        <label for="sloper">Slope Rating:</label><br>
+        <input type="text" id="sloper" name="sloper" placeholder="137"><br><br>
+        <label for="par">Par:</label><br>
+        <input type="text" id="par" name="par" placeholder="72"><br>
+        <label for="pcc">Playing Condition Adj:</label><br>
+        <input type="text" id="pcc" name="pcc" placeholder="If unsure enter 0"><br><br>
+        <input type="button" value="submit" onclick="logic(document.getElementById('score').value, document.getElementById('uindex').value, document.getElementById('crate').value, document.getElementById('sloper').value, document.getElementById('par').value, document.getElementById('pcc').value)" />
+    </form>
+    <h4 id="sbn"></h4>
+    <h4 id="df"></h4>
+    <script src="app.js"></script>
+</html>
+
